@@ -1,5 +1,5 @@
 import connectionDB from "./DB/connectionDB.js";
-import { authRouter, postsRouter, usersRouter } from "./modules/index.js";
+import { authRouter, chatRouter, postsRouter, usersRouter } from "./modules/index.js";
 import { AppError, globalErrorHandler } from "./utilities/error.js";
 import cors from "cors";
 
@@ -17,6 +17,7 @@ const bootstrap = (app, express) => {
   app.use("/auth", authRouter);
   app.use("/users", usersRouter);
   app.use("/posts", postsRouter);
+  app.use("/chat", chatRouter);
 
   app.use("*", (req, res, next) => {
     return next(new AppError(`invalid url ${req.originalUrl}`, 404));

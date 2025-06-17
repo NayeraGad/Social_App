@@ -1,6 +1,6 @@
 import Joi from "joi";
 import { generalRules } from "../../utilities/generalRules.js";
-import { genderEnum } from "../../DB/models/usersModels.js";
+import { genderEnum } from "../../DB/models/usersModel.js";
 
 export const updateProfileSchema = {
   body: Joi.object({
