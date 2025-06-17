@@ -71,7 +71,7 @@ cd Social_App
 npm install
 ```
 
-### 3. Configure environment variables
+### 2. Configure environment variables
 
 Create a .env file based on .env.example:
 
@@ -110,7 +110,7 @@ CLOUD_API_KEY=your_cloudinary_api_key
 CLOUD_API_SECRET=your_cloudinary_api_secret
 ```
 
-### 4. Start the server
+### 3. Start the server
 
 ```
 npm start
